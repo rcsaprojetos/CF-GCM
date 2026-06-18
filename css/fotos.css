@@ -79,13 +79,13 @@ ul#documentos li span {
 }
 
 /* Celular: 1 coluna, card horizontal */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 	ul#documentos {
 		grid-template-columns: 1fr;
 		gap: 10px;
 		margin: 12px auto;
 		padding: 0 8px;
-		max-width: 400px;
+		max-width: 100%;
 	}
 
 	ul#documentos li {
@@ -95,10 +95,11 @@ ul#documentos li span {
 		padding: 16px 20px;
 		gap: 18px;
 		border-radius: 10px;
+		height: 70px;
 	}
 
 	ul#documentos li i {
-		font-size: 32px;
+		font-size: 30px;
 		flex-shrink: 0;
 	}
 
