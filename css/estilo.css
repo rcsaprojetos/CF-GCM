@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	background-image:
 		linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
-		url('../imagens/gcmfundo.png');
+		url('imagens/gcmfundo.png');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -106,24 +106,37 @@ footer#rodape p {
 
 /* ===== RESPONSIVIDADE ===== */
 
-@media (max-width: 1024px) {
-	header#cabecalho, div#interface, footer#rodape {
+@media screen and (max-width: 1024px) {
+	header#cabecalho, footer#rodape {
 		margin: 10px 30px;
+	}
+	div#interface {
+		margin: 30px 30px;
 	}
 }
 
-@media (max-width: 768px) {
-	header#cabecalho, div#interface, footer#rodape {
+@media screen and (max-width: 768px) {
+	header#cabecalho, footer#rodape {
 		margin: 8px 10px;
+	}
+	div#interface {
+		margin: 20px 10px;
 	}
 	header#cabecalho h1 { font-size: 15pt; }
 	header#cabecalho h2 { font-size: 10pt; }
 	nav#menu li { padding: 5px 12px; }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 500px) {
 	header#cabecalho h1 { font-size: 13pt; letter-spacing: 0.04em; }
 	nav#menu ul { gap: 5px; }
 	nav#menu li { padding: 4px 10px; }
 	nav#menu a { font-size: 9pt; }
+	div#interface {
+		margin: 10px 8px;
+		padding: 0;
+	}
+	footer#rodape {
+		margin: 10px 8px;
+	}
 }

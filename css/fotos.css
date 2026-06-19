@@ -75,27 +75,34 @@ ul#documentos li span {
 /* Celular: 1 coluna com card horizontal */
 @media screen and (max-width: 500px) {
 	ul#documentos {
-		grid-template-columns: 1fr !important;
+		grid-template-columns: 1fr;
 		gap: 10px;
-		margin: 12px 8px;
+		margin: 12px 0;
+		padding: 0;
 		max-width: 100%;
 	}
+	ul#documentos a {
+		width: 100%;
+	}
 	ul#documentos li {
-		aspect-ratio: unset !important;
-		flex-direction: row !important;
-		justify-content: flex-start !important;
-		align-items: center !important;
-		padding: 14px 20px !important;
-		gap: 16px !important;
-		height: 68px !important;
+		aspect-ratio: unset;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 16px 20px;
+		gap: 16px;
+		height: 70px;
+		width: 100%;
 		border-radius: 10px;
 	}
 	ul#documentos li i {
-		font-size: 28px !important;
+		font-size: 28px;
 		flex-shrink: 0;
+		width: 32px;
+		text-align: center;
 	}
 	ul#documentos li span {
-		font-size: 11pt !important;
-		text-align: left !important;
+		font-size: 11pt;
+		text-align: left;
 	}
 }
