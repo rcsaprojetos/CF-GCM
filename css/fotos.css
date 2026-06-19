@@ -6,7 +6,7 @@ ul#documentos {
 	gap: 14px;
 	list-style: none;
 	margin: 24px auto;
-	padding: 0;
+	padding: 0 8px;
 	max-width: 860px;
 }
 
@@ -61,50 +61,41 @@ ul#documentos li span {
 /* ===== RESPONSIVIDADE ===== */
 
 /* Tablet: 2 colunas */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	ul#documentos {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 12px;
 		margin: 16px auto;
 		max-width: 500px;
 	}
-
-	ul#documentos li i {
-		font-size: 42px;
-	}
-
-	ul#documentos li span {
-		font-size: 9.5pt;
-	}
+	ul#documentos li i { font-size: 42px; }
+	ul#documentos li span { font-size: 9.5pt; }
 }
 
-/* Celular: 1 coluna, card horizontal */
-@media (max-width: 600px) {
+/* Celular: 1 coluna com card horizontal */
+@media screen and (max-width: 500px) {
 	ul#documentos {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr !important;
 		gap: 10px;
-		margin: 12px auto;
-		padding: 0 8px;
+		margin: 12px 8px;
 		max-width: 100%;
 	}
-
 	ul#documentos li {
-		aspect-ratio: unset;
-		flex-direction: row;
-		justify-content: flex-start;
-		padding: 16px 20px;
-		gap: 18px;
+		aspect-ratio: unset !important;
+		flex-direction: row !important;
+		justify-content: flex-start !important;
+		align-items: center !important;
+		padding: 14px 20px !important;
+		gap: 16px !important;
+		height: 68px !important;
 		border-radius: 10px;
-		height: 70px;
 	}
-
 	ul#documentos li i {
-		font-size: 30px;
+		font-size: 28px !important;
 		flex-shrink: 0;
 	}
-
 	ul#documentos li span {
-		font-size: 11pt;
-		text-align: left;
+		font-size: 11pt !important;
+		text-align: left !important;
 	}
 }
