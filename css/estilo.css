@@ -88,16 +88,19 @@ div#interface {
 
 /* Rodapé */
 footer#rodape {
-	clear: both;
 	background-color: rgba(20, 36, 62, 0.92);
 	color: rgba(255,255,255,0.45);
 	text-align: center;
 	padding: 12px 15px;
-	border-radius: 10px;
-	margin: 100px auto 10px;
-	max-width: 1200px;
+	border-radius: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 	font-size: 9pt;
 	border-top: 1px solid rgba(255,255,255,0.08);
+	z-index: 100;
 }
 
 footer#rodape p {
@@ -107,7 +110,7 @@ footer#rodape p {
 /* ===== RESPONSIVIDADE ===== */
 
 @media screen and (max-width: 1024px) {
-	header#cabecalho, footer#rodape {
+	header#cabecalho {
 		margin: 10px 30px;
 	}
 	div#interface {
@@ -116,7 +119,7 @@ footer#rodape p {
 }
 
 @media screen and (max-width: 768px) {
-	header#cabecalho, footer#rodape {
+	header#cabecalho {
 		margin: 8px 10px;
 	}
 	div#interface {
@@ -135,8 +138,5 @@ footer#rodape p {
 	div#interface {
 		margin: 10px 8px;
 		padding: 0;
-	}
-	footer#rodape {
-		margin: 10px 8px;
 	}
 }
